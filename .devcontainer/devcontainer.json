@@ -1,0 +1,25 @@
+{
+  "name": "DevSecOps Phase 1 Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",
+  "features": {
+    // Instala Docker dentro del Codespace (Docker-in-Docker)
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "enableNonRootDocker": "true",
+      "moby": "true"
+    },
+    // Instala Terraform automáticamente
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    // Instala el cliente de AWS
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+  // Extensiones de VS Code útiles que se instalarán solas
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "hashicorp.terraform", 
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}

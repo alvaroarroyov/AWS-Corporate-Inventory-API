@@ -215,5 +215,3 @@ __marimo__/
 *.tfstate
 *.tfstate.backup
 
-# Ignorar carpeta de configuración del IDE
-.devcontainer/
