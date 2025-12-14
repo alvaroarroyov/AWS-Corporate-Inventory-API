@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignorar carpeta de dependencias de Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Ignorar estado de Terraform (Informacion sensible)
+*.tfstate
+*.tfstate.backup
+
+# Ignorar carpeta de configuración del IDE
+.devcontainer/
